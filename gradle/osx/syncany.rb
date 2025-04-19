@@ -2,13 +2,13 @@ require "formula"
 
 class Syncany < Formula
   homepage "https://www.syncany.org"
-  url "https://codeload.github.com/syncany/syncany/tar.gz/v0.4.6-alpha"
-  sha256 "1dfd92e7618297eae6ee0d8acb7103f55c8d18500da409d032a5941147fbcd85"
-  version "0.4.6-alpha"
+  url "https://codeload.github.com/syncany/syncany/tar.gz/v0.4.9-alpha"
+  sha256 "33b3c9a03c52c33b6b402e925b7ec2c4ea106211e99861375d93fb8fe400f8e4"
+  version "0.4.9-alpha"
   head "https://github.com/syncany/syncany.git", :branch => "develop"
 
-  depends_on :java => "1.7+"
-  depends_on "gradle" => "2.2"
+  depends_on :java => "1.8+"
+  depends_on "gradle" => "5.0+"
 
   def install
     system "./gradlew", "installDist"
